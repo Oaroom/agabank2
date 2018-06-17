@@ -13,12 +13,13 @@
         android:background="#ffffff"
         android:orientation="vertical">
 
+        <!--
         <TextView
             android:id="@+id/result"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView" />
-
+-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -102,15 +103,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <CheckBox
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:text="과소비 항목" />
-
             <TextView
                 android:layout_width="1dp"
-                android:layout_weight="4"
+                android:layout_weight="7"
                 android:layout_height="wrap_content" />
 
 
@@ -135,7 +130,7 @@
     <ListView
         android:id="@+id/content"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
+        android:layout_height="350dp"
         android:layout_margin="10dp">
 
     </ListView>
@@ -146,9 +141,9 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginBottom="10dp"
         android:background="#6997E0"
         android:text="확인"
-        android:layout_marginBottom="10dp"
         android:textColor="#ffffff" />
 
 </LinearLayout>

@@ -106,7 +106,7 @@ public class ShowActivity extends AppCompatActivity{
             Log.d("데이타가 제대로 나오냐고???!?????!",String.valueOf(value.length/7));
 
 
-            mTextViewResult.setText(result);//php에서 echo 해주는 내용 출력해준다
+          //  mTextViewResult.setText(result);//php에서 echo 해주는 내용 출력해준다
 
 
             String data[][] = new  String[value.length/7][7];
