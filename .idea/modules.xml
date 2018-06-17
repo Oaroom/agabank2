@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://C:\Users\LG\Desktop\AgaBankH-master\AgaBankH-master\AgaBankH.iml" filepath="C:\Users\LG\Desktop\AgaBankH-master\AgaBankH-master\AgaBankH.iml" />
-      <module fileurl="file://C:\Users\LG\AndroidStudioProjects\agabank2\AgaBankH-master.iml" filepath="C:\Users\LG\AndroidStudioProjects\agabank2\AgaBankH-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/agabank2.iml" filepath="$PROJECT_DIR$/agabank2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\LG\Desktop\AgaBankH-master\AgaBankH-master\app\app.iml" filepath="C:\Users\LG\Desktop\AgaBankH-master\AgaBankH-master\app\app.iml" />
     </modules>
   </component>
 </project>

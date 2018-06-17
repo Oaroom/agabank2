@@ -17,8 +17,10 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.lang.reflect.Array;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
 
 /**
  * Created by LG on 2018-06-13.
@@ -29,6 +31,8 @@ public class ShowActivity extends AppCompatActivity{
     private Spinner spinner_counter;
     ListView listview;
     Button showB;
+    ShowAdapter adapter;
+
     Intent intent = null;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -89,7 +93,46 @@ public class ShowActivity extends AppCompatActivity{
 
             progressDialog.dismiss();
 
+            String value[] =  result.split("&");
+
+
+            adapter = new ShowAdapter();
+
+            adapter.notifyDataSetChanged();
+            listview.setAdapter(adapter);
+
+            Log.d("데이터가 제대로 나오냐???!?????!",String.valueOf(value.length));
+
+            Log.d("데이타가 제대로 나오냐고???!?????!",String.valueOf(value.length/7));
+
+
             mTextViewResult.setText(result);//php에서 echo 해주는 내용 출력해준다
+
+
+            String data[][] = new  String[value.length/7][7];
+
+
+
+
+            int index = 0;
+
+            for(int i = 0 ; i < value.length/7; i++){
+
+                for(int j = 0 ; j < 7 ; j++){
+
+                    data[i][j] = value[index];
+                    index++;
+
+                }
+
+
+                adapter.addShowItem(data[i][0],data[i][2],data[i][4],data[i][5],data[i][3]);
+
+            }
+
+            listview.setAdapter(adapter);
+
+
             if (result.equals("ok")) {
                 Log.d("od", "dddd");
             }
@@ -140,18 +183,20 @@ public class ShowActivity extends AppCompatActivity{
                 BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 
                 StringBuilder sb = new StringBuilder();
-                String line = null;
+               String line = null;
+
 
                 while ((line = bufferedReader.readLine()) != null) {
                     sb.append(line);
                 }
 
 
+
                 bufferedReader.close();
 
 
-                //return sb.toString();
-                return "test";
+                return sb.toString();
+
 
 
             } catch (Exception e) {
