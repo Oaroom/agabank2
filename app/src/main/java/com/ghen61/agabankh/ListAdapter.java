@@ -54,6 +54,8 @@ public class ListAdapter extends BaseAdapter implements View.OnClickListener {
 
 
     public ArrayList<ListViewItem> listViewItemList = new ArrayList<ListViewItem>();
+    public ArrayList<ShowItem> listShowItme = new ArrayList<ShowItem>();
+
 
 
     @Override
@@ -156,6 +158,8 @@ public class ListAdapter extends BaseAdapter implements View.OnClickListener {
 
         listViewItemList.add(item);
     }
+
+
 
     public void clearItem(){
         listViewItemList.clear();

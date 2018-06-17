@@ -90,10 +90,6 @@ public class MainActivity extends AppCompatActivity implements ListAdapter.ListB
       //  loadItemsFrom(items);
 
 
-      /*  listAdapter.addItem("1111111111","50,000","1,000","50,000");
-        listAdapter.addItem("2222222222","40,000","1,400","20,000");*/
-
-
         setting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -111,7 +107,7 @@ public class MainActivity extends AppCompatActivity implements ListAdapter.ListB
         *
         * */
 
-        listView.setAdapter(listAdapter);
+
 
 
         GetData task = new GetData();
@@ -237,8 +233,22 @@ public class MainActivity extends AppCompatActivity implements ListAdapter.ListB
                 hashMap.put("moungAccount", moungAccount);
                 hashMap.put("balance", balance);
 
-                listAdapter.addItem(account,moungAccount,slimit,mlimit);
-                Log.d("!!!!!!!!!!!!!!!!!!!!11", account);
+
+            if(moungAccount.equals("")){
+
+                   moungAccount = "0";
+
+                }
+
+                Toast.makeText(this, "잔액:"+moungAccount+"!", Toast.LENGTH_SHORT).show();
+
+                listAdapter.addItem(account,moungAccount+"원",slimit+"원",mlimit+"원");
+                listView.setAdapter(listAdapter);
+
+                Log.d("~~~~~~~~~~~", moungAccount);
+
+
+
 
                 mArrayList.add(hashMap);
             }
