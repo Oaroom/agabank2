@@ -18,7 +18,7 @@ import java.util.ArrayList;
  * Created by LG on 2018-06-13.
  */
 
-public class ListAdapter extends BaseAdapter implements View.OnClickListener {
+public class DeleteAdapter extends BaseAdapter implements View.OnClickListener {
 
 
     //버튼 클릭 이벤트를 위한 Listener 인터페이스 정의.
@@ -39,7 +39,7 @@ public class ListAdapter extends BaseAdapter implements View.OnClickListener {
     private ListBtnClickListener listBtnClickListener;
 
     //리스트뷰 어댑터 생성자, 마지막에 ListAdapter 추가
-    ListAdapter(Context content, int resource, ArrayList<ListViewItem> list, ListBtnClickListener clickListener){
+    DeleteAdapter(Context content, int resource, ArrayList<ListViewItem> list, ListBtnClickListener clickListener){
 
         this.content=content;
         this.resource = resource;
@@ -104,15 +104,9 @@ public class ListAdapter extends BaseAdapter implements View.OnClickListener {
 
 
         //계좌번호를 같이 넘거야하는데,,,,
-        Button showB = (Button) convertView.findViewById(R.id.showB);
-        showB.setTag("show/"+acc.getText());
-        showB.setOnClickListener(this);
-
-
-        Button sendB = (Button) convertView.findViewById(R.id.sendB);
-        sendB.setTag("send/"+acc.getText());
-        sendB.setOnClickListener(this);
-
+        ImageButton deleteB = (ImageButton) convertView.findViewById(R.id.deleteB);
+        deleteB.setTag("delete/"+acc.getText());
+        deleteB.setOnClickListener(this);
 
 
 

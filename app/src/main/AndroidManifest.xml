@@ -44,6 +44,9 @@
         <activity android:name=".NoticeActivity">
 
         </activity>
+        <activity android:name=".DeleteActivity">
+
+        </activity>
 
 
     </application>

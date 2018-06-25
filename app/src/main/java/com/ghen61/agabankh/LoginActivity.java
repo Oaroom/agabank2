@@ -44,8 +44,8 @@ public class LoginActivity extends AppCompatActivity {
 
 
     //DB에서 확인을 위한 아이디와 비밀번호
-    String idDB = "hello";
-    String pwDB = "world";
+    String idDB = "aaaaa";
+    String pwDB = "aaaaa";
 
     //자동로그인
     private SharedPreferences appData;
