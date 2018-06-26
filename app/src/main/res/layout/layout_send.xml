@@ -8,6 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:background="#ffffff"
         android:orientation="vertical">
 
         <TextView
@@ -35,24 +36,26 @@
 
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
         android:layout_marginTop="70dp"
+        android:background="@drawable/form"
         android:orientation="vertical">
 
 
         <LinearLayout
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
 
-
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:text="출금계좌" />
@@ -74,16 +77,15 @@
             android:orientation="horizontal">
 
 
-
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:text="받는분" />
 
             <EditText
                 android:id="@+id/name"
-                android:layout_width="250dp"
+                android:layout_width="230dp"
                 android:layout_height="30dp"
                 android:background="@drawable/editview"
                 android:contentDescription="이름" />
@@ -99,7 +101,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="30dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
@@ -109,7 +111,7 @@
 
             <EditText
                 android:id="@+id/acc"
-                android:layout_width="250dp"
+                android:layout_width="230dp"
                 android:layout_height="30dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="20dp"
@@ -128,7 +130,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:text="소비분류" />
@@ -164,10 +166,11 @@
 
     <Button
         android:id="@+id/submitB"
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center_vertical|center_horizontal"
-        android:background="#6997E0"
+        android:background="@drawable/submit"
         android:text="확인"
         android:textColor="#ffffff" />
 

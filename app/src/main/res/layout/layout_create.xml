@@ -8,6 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:background="#ffffff"
         android:orientation="vertical">
 
         <TextView
@@ -31,164 +32,190 @@
         android:layout_width="match_parent"
         android:layout_height="2px"
         android:background="#ABABAB"
-        />
-
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_marginTop="30dp"
-        android:text="* 본인 확인을 위한 절차입니다. "
+        android:layout_marginBottom="10dp"
         />
 
 
     <LinearLayout
-        android:layout_width="match_parent"
+
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:orientation="horizontal">
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="20dp"
-                android:text="아이디" />
-
-            <EditText
-                android:id="@+id/nameText"
-                android:layout_width="150dp"
-                android:layout_height="30dp"
-                android:background="@drawable/editview"
-                android:contentDescription="아이디" />
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="351dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="20dp"
-                android:text="비밀번호" />
-
-
-            <EditText
-                android:id="@+id/numText"
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/editview"
-                android:contentDescription="비밀번호" />
-
-
-        </LinearLayout>
-
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:background="#fafafa" />
+        android:layout_margin="10dp"
+        android:background="@drawable/form"
+        android:orientation="vertical"
+        android:layout_gravity="center">
 
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="* 개설할 계좌의 한도 금액을 정해주세요 " />
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/roundtitle"
+            android:gravity="center|left"
+            android:text="* 본인 확인을 위한 절차입니다. "
+            android:textColor="#ffffff" />
 
 
         <LinearLayout
-            android:layout_width="351dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginTop="20dp"
-                android:text="월별 한도금액" />
+
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
 
 
-            <EditText
-                android:id="@+id/monthText"
-                android:layout_width="250dp"
-                android:layout_height="30dp"
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:text="아이디" />
+
+                <EditText
+                    android:id="@+id/nameText"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/editview"
+                    android:contentDescription="아이디" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="351dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="비밀번호" />
+
+
+                <EditText
+                    android:id="@+id/numText"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/editview"
+                    android:contentDescription="비밀번호" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#fafafa" />
+
+
+            <TextView
+
+
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/editview"
-                android:contentDescription="결제금액이 누적되어 적용되는 한도금액입니다." />
+                android:background="@drawable/roundtitle"
+                android:gravity="center|left"
+                android:text="* 개설할 계좌의 한도 금액을 정해주세요 "
+                android:textColor="#ffffff" />
+
+
+            <LinearLayout
+                android:layout_width="351dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="월별 한도금액" />
+
+
+                <EditText
+                    android:id="@+id/monthText"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/editview"
+                    android:contentDescription="결제금액이 누적되어 적용되는 한도금액입니다." />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="351dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="개별 한도금액" />
+
+
+                <EditText
+                    android:id="@+id/spendText"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/editview"
+                    android:contentDescription="모든 결제에 적용되는 한도금액입니다." />
+
+
+            </LinearLayout>
 
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="351dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="20dp"
-                android:text="개별 한도금액" />
-
-
-            <EditText
-                android:id="@+id/spendText"
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/editview"
-                android:contentDescription="모든 결제에 적용되는 한도금액입니다." />
-
-
-        </LinearLayout>
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
 
     </LinearLayout>
 
+
+
     <Button
         android:id="@+id/createB"
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center_horizontal"
-        android:background="#6997E0"
+        android:background="@drawable/submit"
         android:text="확인"
         android:textColor="#ffffff" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/result"/>
-
 
 </LinearLayout>
