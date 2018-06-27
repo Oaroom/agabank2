@@ -36,6 +36,8 @@
             android:text="나의 소비습관을 한눈에 확인하세요"
             android:textSize="7pt" />
 
+
+
     </LinearLayout>
 
     <View
@@ -130,20 +132,19 @@
     <ListView
         android:id="@+id/content"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="400dp"
+        android:background="@drawable/baby1"
         android:layout_margin="10dp">
 
     </ListView>
 
 
     <Button
-        android:id="@+id/submitB"
-        android:layout_width="100dp"
+        android:id="@+id/submitC"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:layout_marginBottom="10dp"
-        android:background="#6997E0"
-        android:text="확인"
-        android:textColor="#ffffff" />
+        android:background="@drawable/submit"
+        android:textColor="#ffffff"
+        android:text="과소비 항목만" />
 
 </LinearLayout>

@@ -240,7 +240,7 @@ public class MainActivity extends AppCompatActivity implements ListAdapter.ListB
 
                 }
 
-                Toast.makeText(this, "잔액:"+moungAccount+"!", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(this, "잔액:"+moungAccount+"!", Toast.LENGTH_SHORT).show();
 
                 listAdapter.addItem(account,moungAccount+"원",slimit+"원",mlimit+"원");
                 listView.setAdapter(listAdapter);

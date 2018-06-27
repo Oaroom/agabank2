@@ -39,7 +39,7 @@
         android:layout_width="350dp"
         android:layout_height="250dp"
         android:layout_gravity="center"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="90dp"
         android:background="@drawable/form"
         android:orientation="vertical">
 
@@ -126,7 +126,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="15dp"
             android:orientation="horizontal">
 
             <TextView
@@ -143,24 +143,39 @@
                 android:layout_weight="4"
                 android:entries="@array/spend" />
 
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
 
                 android:layout_marginRight="10dp"
-                android:text="금액"
 
-                />
+                android:text="금액" />
 
 
             <EditText
                 android:id="@+id/money"
-                android:layout_width="0dp"
+                android:layout_width="230dp"
                 android:layout_height="30dp"
-                android:layout_weight="6"
                 android:background="@drawable/editview" />
 
+
         </LinearLayout>
+
+
 
     </LinearLayout>
 
